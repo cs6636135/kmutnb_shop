@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import SearchBar from "../components/SearchBar.jsx";
 import LocationCard from "../components/LocationCard.jsx";
 import { api, toList } from "../services/api.js";
+const API_URL = import.meta.env.VITE_API_URL; // ตัวแปรนี้จะได้ค่าเป็น "http://127.0.0.1:8000" ไว้ใช้เรียก API ของ Django
 
 export default function Home() {
   const nav = useNavigate();
@@ -18,7 +19,7 @@ export default function Home() {
    const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/api/test/`)
+    fetch(`${API_URL}/api/test/`)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
