@@ -18,7 +18,7 @@ export default function Home() {
    const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("/api/test/")
+    fetch(`${import.meta.env.VITE_API_URL}/api/test/`)
       .then((response) => response.json())
       .then((result) => {
         console.log(result);
