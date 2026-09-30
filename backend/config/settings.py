@@ -111,7 +111,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 AUTH_USER_MODEL = 'shop.User'  # ใช้ User model ของเราเอง (ไม่ใช่ของ Django)
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",    
+    "http://localhost:5173",   
+    "https://kmutnb-shop.vercel.app",
+    "https://kmutnb-shop-git-main-tapanee-135s-projects.vercel.app",
+    "https://kmutnb-shop-f0qzt95kn-tapanee-135s-projects.vercel.app", 
 ]
 # Internationalization
 # https://docs.djangoproject.com/en/6.1/topics/i18n/
