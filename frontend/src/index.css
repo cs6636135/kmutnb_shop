@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* สีหลักของเว็บ: ส้มอิฐ (แก้สีทั้งเว็บได้ที่นี่ที่เดียว) */
+@theme {
+  --font-sans: "Noto Sans Thai", system-ui, sans-serif;
+  --color-brick-50: #fff6f1;
+  --color-brick-100: #fbe6da;
+  --color-brick-200: #f3c6ae;
+  --color-brick-500: #cf5a2a;
+  --color-brick-600: #b8471f;
+  --color-brick-700: #9a3a19;
+  --color-brick-900: #4a1d0c;
+}
+
+body { @apply bg-brick-50 text-brick-900 antialiased; }
